@@ -1,0 +1,80 @@
+JSP 확인문제 [ 나 ]
+- 웹 프로그램의 3단계
+: 브라우저(클라이언트) -> 웹서버 -> DB
+- WAS는 무엇의 약자인가?
+: Web Application Server (웹서버의 모든 기능을 담당)
+- 웹 서버 종류?
+: 웹서버, WAS
+- 어떤 자바 WAS를 써봤나요?
+: tomcat
+- JDBC 4단계를 정리해봐자
+1) 자바에서 오라클 드라이버 연결
+2) 자바와 연결하기 위한 경로(포트) 지정
+3) 자바에서 오라클로 데이터 전달
+4) 오라클이 자바로부터 받은 데이터 저장
+- mySQL과 Oracle의 기본 port는?
+: mySQL = 3306 / Oracle = 1521
+- JSP는 무엇의 약자?
+: Java Server Pages
+- servlet과 JSP의 관계?
+: jsp는 서버쪽에서의 동적인 처리역할
+ servlet은 서버에서 실행되는 작은 프로그램
+- http의 용도, 무엇의 약자?
+: Hyper Text Transfer Protocol
+ 웹 클라이언트의 서비스 요청시 HTTP 프로토콜에의해 웹 서버로 전달하기 위함
+- http의 구성요소 2가지
+: header, body
+- 브라우저가 보낼 떄의 http 헤더와 바디
+: header = 요청주소(URI), query string(GET)
+ body = content
+- 웹서버가 보낼때의 http헤더와 바디
+: header = status code
+ body = 응답내용
+
+JSP 확인문제 [ 답안 ]
+- 웹 프로그램의 3단계
+: 브라우저(클라이언트) -> 웹서버 -> DB
+
+- 웹 서버측의 구성
+: 웹서버 == http요청/응답, WAS == 자바로 동적처리 부분 담당
+
+- WAS는 무엇의 약자인가?
+: Web Application Server (웹서버의 모든 기능을 담당)
+
+- web 서버 종류
+: apache, nginx(엔진엑스), IIS
+
+- 어떤 자바 WAS를 써봤나요?
+: tomcat
+
+- JDBC 4단계를 정리해보자 (매우매우매우매우 중요)
+1) driver 설정
+2) db연결
+3) SQL문 생성
+4) db로 sql문 전송
+
+- mySQL과 Oracle의 기본 port는?
+: mySQL = 3306 / Oracle = 1521
+
+- JSP는 무엇의 약자?
+: Java Server Pages
+
+- servlet과 JSP의 관계?
+: JSP는 서블릿이라 자바프로그램으로 변환되어 실행
+
+- http의 용도, 무엇의 약자?
+: 클라이언트와 웹서버의 통신규칙(규약, 프로토콜)
+ Hyper Text Transfer Protocol
+
+- http의 구성요소 2가지
+: header, body
+
+- 브라우저가 보낼 떄의 http 헤더와 바디
+:  header = 요청주소 + get(데이터), body = post(데이터)
+
+- 웹서버가 보낼때의 http헤더와 바디
+: header = 상태코드, body = 처리결과
+
+
+* query string : 요청(query)하면서 보내는 String
+== 요청(query)하는 내용을 가지는 String

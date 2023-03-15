@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 자동주석 : ctrl + /, 태그선택 */
+	background: #fcffed;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* 클래스 선택 */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 { /* # : id 선택 */
+	color: red;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>회원정보 수정 페이지</h3>
+	<hr color="red">
+	<a href="index.html">
+		<button id="b1">첫페이지로</button>
+	</a>
+	<form action="update.jsp">
+		<!-- 받는 동적인 것은 html로 할 수 없어서 jsp로 해야함 -->
+		<table border="1">
+			<tr>
+				<td class="t1">수정할 아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+				<td class="t1">수정할 tel :</td>
+				<td><input name="tel"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="t1">
+					<button id="b2">수정 정보 전송</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
