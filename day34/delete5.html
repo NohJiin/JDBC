@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 자동주석 : ctrl + /, 태그선택 */
+	background: #fcffed;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* 클래스 선택 */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 { /* # : id 선택 */
+	color: red;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h3>음원 삭제 전송</h3>
+	<hr>
+	<a href="playList.html">
+		<button id="b1">목차 페이지로</button>
+	</a>
+	<form action="delete5.jsp" method="get">
+		<!-- http://localhost:8888/web02/delete2.jsp?no=100 -->
+		<!-- http의 header(요청 주소 + Get방식으로 넘어가는 데이터 -->
+		<table border="1">
+			<tr>
+				<td class="t1">삭제할 title :</td>
+				<td><input name="title"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="t1">
+					<button id="b2">삭제할 음원 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 자동주석 : ctrl + /, 태그선택 */
+	background: #fcffed;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* 클래스 선택 */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 { /* # : id 선택 */
+	color: red;
+}
+
+#b2 {
+	color: blue;
+}
+a{
+	text-decoration: none;
+	/* color: black; */
+}
+</style>
+</head>
+<body>
+	<h3>상품정보 검색(상세) 페이지</h3>
+	<hr>
+	<a href="index.html">
+		<button id="b1">첫페이지로</button>
+	</a>
+	<hr>
+	<!-- a 태그는 무조건 get방식 요청 -->
+	<a href="one3.jsp?id=100">
+		100번 제품을 보여주세요
+	</a>
+	<a href="one3.jsp?id=101">
+		<button style="background: pink">101</button>
+	</a>
+	<a href="one3.jsp?id=102">
+		<button style="background: pink">102</button>
+	</a>
+	<hr>
+	<form action="one3.jsp" method="get">
+		<!-- http://localhost:8888/web02/delete2.jsp?no=100 -->
+		<!-- http의 header(요청 주소 + Get방식으로 넘어가는 데이터 -->
+		<table border="1">
+			<tr>
+				<td class="t1">검색할 아이디 :</td>
+				<td><input name="id"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="t1">
+					<button id="b2">검색할 id 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
