@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body { /* 자동주석 : ctrl + /, 태그선택 */
+	background: #fcffed;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* 클래스 선택 */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 { /* # : id 선택 */
+	color: red;
+}
+
+#b2 {
+	color: blue;
+}
+/* update2.html에 no에 맞는 tel을 수정하는 화면을 만들어주세요
+	update2.jsp에서 받아서 당신이 원하는 번호는 200, 당신이 수정을 원하는 전화번호는 999
+	위와 같이 클라이언트에 응답하라 */
+</style>
+</head>
+<body>
+	<h3>게시판 수정 페이지</h3>
+	<hr color="red">
+	<a href="bbs.html">
+		<button id="b1">첫페이지로</button>
+	</a>
+	<form action="update2.jsp">
+		<!-- 받는 동적인 것은 html로 할 수 없어서 jsp로 해야함 -->
+		<table border="1">
+			<tr>
+				<td class="t1">게시물 번호 :</td>
+				<td><input name="no"></td>
+			</tr>
+			<tr>
+				<td class="t1">수정할 content :</td>
+				<td><input name="content"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="t1">
+					<button id="b2">게시물 수정 전송 버튼</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

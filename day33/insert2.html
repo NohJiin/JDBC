@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	// alert('게시판 글쓰기 페이지입니다. 반갑습니다!')
+</script>
+<style type="text/css">
+body { /* 자동주석 : ctrl + /, 태그선택 */
+	background: #fcffed;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* 클래스 선택 */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 { /* # : id 선택 */
+	color: red;
+}
+
+#b2 {
+	color: blue;
+}
+</style>
+</head>
+<!-- no, title, content, writer 게시판 글쓰기 -->
+<body>
+	<h3>게시판 글쓰기 페이지</h3>
+	<hr>
+	<a href="bbs.html">
+		<button id="b1">첫페이지로</button>
+	</a>
+	<form action="insert2.jsp">	<!-- 받는 동적인 것은 html로 할 수 없어서 jsp로 해야함 -->
+		<table border="1">
+			<tr>
+				<td class="t1">제목 :</td>
+				<td><input name="title"></td>
+			</tr>
+			<tr>
+				<td class="t1">내용 :</td>
+				<td><input name="content"></td>
+			</tr>
+			<tr>
+				<td class="t1">작성자 :</td>
+				<td><input name="writer"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="t1">
+					<button id="b2">게시판 글쓰기 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+		<!-- 입력한 값들이 서버(톰킷)으로  전달될때는 form 태그 안에 있어야함 -->
+	</form>
+	<!-- 보충내용 : <input name="data"> -->
+	<!-- http://localhost:8888/web02/insert.jsp?pw=aaa&name=aaa&tel=aaa -->
+</body>
+</html>
